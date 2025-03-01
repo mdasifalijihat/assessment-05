@@ -12,5 +12,5 @@ function updateDayAndDate() {
 
     // discover blogs
     document.getElementById("discover-blog").addEventListener("click", function () {
-        window.location.href = "assessment-05/blog.html";
+        window.location.href = "/assessment-05/blog.html";
       });
