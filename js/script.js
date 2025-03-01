@@ -11,7 +11,7 @@ function updateCounts() {
 function addToActivityLog(taskTitle) {
     const logContainer = document.getElementById("history-create");
     const logItem = document.createElement("p");
-    logItem.classList.add("bg-gray-100", "p-2", "rounded-lg", "my-2", "text-sm");
+    logItem.classList.add("bg-gray-100", "p-2", "rounded-lg", "my-2", "text-md",);
 
     // Get current date and time
     const now = new Date();
