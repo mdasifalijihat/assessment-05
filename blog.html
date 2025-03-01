@@ -1,83 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>blogs</title>
     <!-- tailwind css and daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--  -->
-</head>
+  </head>
 
-<body class="bg-gray-200 p-4">
+  <body class="bg-gray-200 p-4">
     <header class="container mx-auto">
-        <nav class="flex justify-between items-center p-4 border-white rounded-lg bg-white">
-            <div class="flex items-center justify-center gap-4">
-                <img class="w-12 h-12" src="images/logo.png" alt="" />
-                <h2 class="text-4xl">Dev <span class="font-bold">Board</span></h2>
-            </div>
-            <div class="flex items-center justify-center gap-4">
-                <button id="back-btn" class="btn text-xl font-bold bg-[#3752FD] text-white">
-                    Back to Desk
-                </button>
-            </div>
-        </nav>
+      <nav
+        class="flex justify-between items-center p-4 border-white rounded-lg bg-white"
+      >
+        <div class="flex items-center justify-center gap-4">
+          <img class="w-12 h-12" src="images/logo.png" alt="" />
+          <h2 class="text-4xl">Dev <span class="font-bold">Board</span></h2>
+        </div>
+        <div class="flex items-center justify-center gap-4">
+          <button
+            id="back-btn"
+            class="btn text-xl font-bold bg-[#3752FD] text-white"
+          >
+            Back to Desk
+          </button>
+        </div>
+      </nav>
     </header>
     <!-- main section -->
     <main class="container mx-auto">
-        <section>
-            <h2 class="text-center font-bold text-2xl p-6"> Blogs </h2>
-            <div class="space-y-4">
-                <!-- 1 div -->
-                <div class="bg-white p-4 rounded-md">
-                    <h2 class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed">Question-1: What are
-                        the different ways to select an element in the DOM?</h2>
-                    <p class="py-2 text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
-                        facere sint? Sint, harum aspernatur magnam molestiae architecto doloremque distinctio facilis
-                        minus quo, soluta officiis modi, odit consequuntur porro totam beatae!</p>
-                </div>
-                <!-- 2 div -->
-                <div class="bg-white p-4 rounded-md">
-                    <h2 class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed">Question-2: What is
-                        the difference between innerHTML, innerText, and textContent ?</h2>
-                    <p class="py-2 text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
-                        facere sint? Sint, harum aspernatur magnam molestiae architecto doloremque distinctio facilis
-                        minus quo, soluta officiis modi, odit consequuntur porro totam beatae!</p>
-                </div>
-                <!-- 3 div -->
-                <div class="bg-white p-4 rounded-md">
-                    <h2 class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed">Question-3: What is event delegation in the DOM?</h2>
-                    <p class="py-2 text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
-                        facere sint? Sint, harum aspernatur magnam molestiae architecto doloremque distinctio facilis
-                        minus quo, soluta officiis modi, odit consequuntur porro totam beatae!</p>
-                </div>
-                <!-- 4 div -->
-                <div class="bg-white p-4 rounded-md">
-                    <h2 class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed">Question-4: What is event bubbling in the DOM?</h2>
-                    <p class="py-2 text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
-                        facere sint? Sint, harum aspernatur magnam molestiae architecto doloremque distinctio facilis
-                        minus quo, soluta officiis modi, odit consequuntur porro totam beatae!</p>
-                </div>
-                <!-- 5 div -->
-                <div class="bg-white p-4 rounded-md">
-                    <h2 class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
-                    <p class="py-2 text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
-                        facere sint? Sint, harum aspernatur magnam molestiae architecto doloremque distinctio facilis
-                        minus quo, soluta officiis modi, odit consequuntur porro totam beatae!</p>
-                </div>
-            </div>
-        </section>
-
+      <section>
+        <h2 class="text-center font-bold text-2xl p-6">Blogs</h2>
+        <div class="space-y-4">
+          <!-- 1 div -->
+          <div class="bg-white p-4 rounded-md">
+            <h2
+              class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed"
+            >
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </h2>
+            <p class="py-2 text-gray-500">
+              1. getElementById() – আইডি দিয়ে এলিমেন্ট সিলেক্ট করা। 2.
+              getElementsByClassName() – ক্লাস নাম ব্যবহার করে একাধিক এলিমেন্ট
+              সিলেক্ট করা। 3. getElementsByTagName() – নির্দিষ্ট ট্যাগ নাম দিয়ে
+              এলিমেন্ট সিলেক্ট করা। 4. querySelector() – CSS সিলেক্টর ব্যবহার
+              করে প্রথম ম্যাচিং এলিমেন্ট সিলেক্ট করা। 5. querySelectorAll() –
+              CSS সিলেক্টর দিয়ে সব ম্যাচিং এলিমেন্ট সিলেক্ট করা।
+            </p>
+          </div>
+          <!-- 2 div -->
+          <div class="bg-white p-4 rounded-md">
+            <h2
+              class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed"
+            >
+              Question-2: What is the difference between innerHTML, innerText,
+              and textContent ?
+            </h2>
+            <p class="py-2 text-gray-500">
+              1. innerHTML – এলিমেন্টের মধ্যে থাকা HTML কোডসহ সমস্ত কনটেন্ট
+              রিটার্ন করে। 2. innerText – শুধুমাত্র ভিজিবল টেক্সট রিটার্ন করে।
+              3. textContent – পুরো টেক্সট রিটার্ন করে, HTML ট্যাগ ছাড়া।
+            </p>
+          </div>
+          <!-- 3 div -->
+          <div class="bg-white p-4 rounded-md">
+            <h2
+              class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed"
+            >
+              Question-3: What is event delegation in the DOM?
+            </h2>
+            <p class="py-2 text-gray-500">
+              Event Delegation যেখানে কোনো parent এলিমেন্টে ইভেন্ট listener যোগ
+              করা হয়, যা তার child এলিমেন্টগুলোর ইভেন্ট হ্যান্ডল করতে পারে।
+            </p>
+          </div>
+          <!-- 4 div -->
+          <div class="bg-white p-4 rounded-md">
+            <h2
+              class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed"
+            >
+              Question-4: What is event bubbling in the DOM?
+            </h2>
+            <p class="py-2 text-gray-500">
+              Event Bubbling হলো একটি প্রসেস, child এলিমেন্টে ইভেন্ট ঘটলে, সেটি
+              parent এবং ancestor এলিমেন্টগুলোর কাছেও পৌঁছে যায়। এটি ডিফল্টভাবে
+              কাজ করে এবং stopPropagation() ব্যবহার করে থামে
+            </p>
+          </div>
+          <!-- 5 div -->
+          <div class="bg-white p-4 rounded-md">
+            <h2
+              class="text-xl font-semibold border-b-2 py-2 border-gray-300 border-dashed"
+            >
+              Question-5: How do you create, add, and remove elements using
+              JavaScript?
+            </h2>
+            <p class="py-2 text-gray-500">
+              1. Create Element: document.createElement('tagName') দিয়ে নতুন
+              এলিমেন্ট তৈরি করা হয়। 2. Add Element: appendChild(), append(), বা
+              insertBefore() ব্যবহার করে এলিমেন্ট যোগ করা যায়। 3. Remove
+              Element: removeChild() বা remove() ব্যবহার করে এলিমেন্ট মুছে ফেলা
+              যায়।
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <script>
-        // blogs back 
-        document.getElementById('back-btn').addEventListener('click', function () {
-            window.location.href = '/index.html';
-        })
-
+      // blogs back
+      document
+        .getElementById("back-btn")
+        .addEventListener("click", function () {
+          window.location.href = "/index.html";
+        });
     </script>
-</body>
-
+  </body>
 </html>
