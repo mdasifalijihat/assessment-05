@@ -34,7 +34,7 @@ function handleCompleteButtonClick(event) {
     const taskTitle = card.querySelector("h3").innerText;
 
     // alert dynamic
-    alert(`"${taskTitle}"`);
+    alert(`${taskTitle}`);
 
     addToActivityLog(taskTitle);
    

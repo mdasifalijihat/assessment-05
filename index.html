@@ -34,7 +34,10 @@
             <i class="fa-solid fa-square-check text-[#3752FD]"></i>
             <span id="count">20</span>
           </button>
-          <button class="border p-1 rounded-full">
+          <button
+            onclick="changeBackgroundColor()"
+            class="border p-1 rounded-full"
+          >
             <img class="w-10 h-10" src="images/theme-btn.png" alt="" />
           </button>
         </div>
@@ -290,26 +293,9 @@
         </div>
       </section>
     </main>
-
-    <script>
-      function updateDayAndDate() {
-        const now = new Date();
-        const dayOptions = { weekday: "long" };
-        const dateOptions = { year: "numeric", month: "long", day: "numeric" };
-        const dayString = now.toLocaleDateString("en-US", dayOptions);
-        const dateString = now.toLocaleDateString("en-US", dateOptions);
-        document.getElementById("day").innerText = dayString;
-        document.getElementById("date").innerText = dateString;
-      }
-
-      updateDayAndDate();
-      // discover blogs
-      document
-        .getElementById("discover-blog")
-        .addEventListener("click", function () {
-          window.location.href = "/blog.html";
-        });
-    </script>
+   
     <script src="js/script.js"></script>
+    <script src="js/bgcolor.js"></script>
+    <script src="js/livetime.js"></script>
   </body>
 </html>
