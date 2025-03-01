@@ -53,7 +53,7 @@
             </div>
           
             <!-- Discover Section -->
-            <div class="col-span-2">
+            <div id="discover-blog" class="col-span-2">
               <div
                 class="rounded-lg h-[128px] bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white flex items-center gap-8 pl-10">
                 <img class="w-16 h-16 md:w-20 md:h-20" src="images/fi_18577309.png" alt="Discover Image" />
@@ -218,7 +218,13 @@
       document.getElementById("date").innerText = dateString;
     }
 
-    updateDayAndDate(); // Initial call
+    updateDayAndDate(); 
+    // discover blogs
+    document.getElementById('discover-blog').addEventListener('click', function(){
+      window.location.href = '/blog.html';
+    })
+    
+
   </script>
   <script src="js/script.js"></script>
 </body>
