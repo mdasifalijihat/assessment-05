@@ -62,3 +62,10 @@ function init() {
 }
 
 init();
+
+// Clear history button 
+document
+  .querySelector(".btn-history-clear")
+  .addEventListener("click", function () {
+    document.getElementById("history-create").innerHTML = "";
+  });
